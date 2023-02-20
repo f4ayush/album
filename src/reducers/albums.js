@@ -5,7 +5,7 @@ export default (albums = [], action) => {
     case FETCH_ALL:
       return action.payload;
     case CREATE:
-      return [...albums, action.payload];
+      return [action.payload, ...albums];
     case UPDATE:
       return albums.map((album) => (album.id === action.payload.id ? action.payload : album));
     case DELETE:

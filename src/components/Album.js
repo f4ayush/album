@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import BasicCard from "../utils/BasicCard"
 import Typography from '@mui/material/Typography';
 import { CircularProgress } from "@mui/material"
@@ -16,7 +16,7 @@ export default function Album() {
 
   return (
     <div>
-        <Typography variant="h2" align="center">Albums</Typography>
+        
         <div className='card-wrapper'>
  
     {

@@ -37,18 +37,18 @@ export default function BasicCard({album}) {
         
         {!enableEdit ? 
             <>
-            <Typography gutterBottom variant="h5" component="div">
-              userId {album.userId}
-            </Typography>
-            <Typography variant="body" color="text.secondary">
-              {album.title}
-            </Typography> 
+              <Typography gutterBottom variant="h5" component="div">
+                userId {album.userId}
+              </Typography>
+              <Typography variant="body" color="text.secondary">
+                {album.title}
+              </Typography> 
             </>: 
             <>
-             <TextField id="outlined-multiline-flexible" label="userId" 
-             variant="outlined" sx={{marginBottom:"10px"}} defaultValue={album.userId} inputRef={userIdRef}/>
-            <TextField id="outlined-multiline-flexible" label="Title" multiline
-            maxRows={4} variant="outlined"  defaultValue={album.title} inputRef={titleRef}/>
+              <TextField id="outlined-multiline-flexible" label="userId" 
+              variant="outlined" sx={{marginBottom:"10px"}} defaultValue={album.userId} inputRef={userIdRef}/>
+              <TextField id="outlined-multiline-flexible" label="Title" multiline
+              maxRows={4} variant="outlined"  defaultValue={album.title} inputRef={titleRef}/>
             </>
             
         }
