@@ -16,7 +16,7 @@ export default function Album() {
 
   return (
     <div>
-        <Typography align="center">Albums</Typography>
+        <Typography variant="h2" align="center">Albums</Typography>
         <div className='card-wrapper'>
  
     {
